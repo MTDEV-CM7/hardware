@@ -176,7 +176,7 @@ enum {
     HAL_PIXEL_FORMAT_YCbCr_422_SP       = 0x10, // NV16
     HAL_PIXEL_FORMAT_YCrCb_420_SP       = 0x11, // NV21
     HAL_PIXEL_FORMAT_YCbCr_422_I        = 0x14, // YUY2
-//#ifdef OMAP_ENHANCEMENT
+#ifdef OMAP_ENHANCEMENT
     HAL_PIXEL_FORMAT_YCbCr_422_P  = 0x12,
     HAL_PIXEL_FORMAT_YCbCr_420_P  = 0x13,
     HAL_PIXEL_FORMAT_YCbCr_420_I  = 0x15,
@@ -188,7 +188,7 @@ enum {
     HAL_PIXEL_FORMAT_YCrCb_422_SP       = 0x23,
     //NV12 Interlaced (Sequential Top-Bottom)
     HAL_PIXEL_FORMAT_YCbCr_420_SP_SEQ_TB = 0x24,
-//#endif
+#endif
 };
 
 
