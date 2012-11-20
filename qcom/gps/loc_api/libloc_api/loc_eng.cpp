@@ -539,7 +539,11 @@ static int  loc_eng_set_position_mode(GpsPositionMode mode, GpsPositionRecurrenc
 #endif
 
    fix_criteria_ptr->min_interval = min_interval;
-   fix_criteria_ptr->preferred_accuracy = 50;
+ fix_criteria_ptr->preferred_accuracy = 50;
+
+    if (!(supl_host_set || c2k_host_set)) {
+        mode = GPS_POSITION_MODE_STANDALONE;
+    }
 
    switch (mode)
    {
